@@ -12,8 +12,8 @@ import (
 
 func main() {
 
-	clientID := ""
-	apiKey := ""
+	clientID := "4214125"
+	apiKey := "6271bcbb-4ada-410d-a43c-f4f1a6a44497"
 
 	client, err := goozon.NewClient(clientID, apiKey)
 	if err != nil {
@@ -23,7 +23,7 @@ func main() {
 	ctx := context.Background()
 
 	req := models.ChatListRequest{
-		Limit: 1,
+		Limit: 20,
 	}
 
 	chats, err := client.GetList(ctx, req)
@@ -36,4 +36,14 @@ func main() {
 		log.Fatal(err)
 	}
 	fmt.Println(string(out))
+
+	body := models.ChatHistoryRequest{
+		ChatId: "7e2eae0c-cbe1-4b0d-a819-22c030aa6c73",
+	}
+	msg, err := client.GetHistory(ctx, body)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(msg)
+
 }
