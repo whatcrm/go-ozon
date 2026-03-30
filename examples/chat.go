@@ -12,8 +12,8 @@ import (
 
 func main() {
 
-	clientID := "4214125"
-	apiKey := "6271bcbb-4ada-410d-a43c-f4f1a6a44497"
+	clientID := ""
+	apiKey := ""
 
 	client, err := goozon.NewClient(clientID, apiKey)
 	if err != nil {
@@ -38,7 +38,7 @@ func main() {
 	fmt.Println(string(out))
 
 	body := models.ChatHistoryRequest{
-		ChatId: "7e2eae0c-cbe1-4b0d-a819-22c030aa6c73",
+		ChatId: "",
 	}
 	msg, err := client.GetHistory(ctx, body)
 	if err != nil {
