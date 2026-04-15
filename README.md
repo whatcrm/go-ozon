@@ -1,5 +1,5 @@
 #  go-ozon
-![Ozon API Library](.github/ozon-logo.png)
+![Ozon API Library](ozon-logo.png)
 
 **go-ozon** is a Rest API for [Ozon Seller](https://seller.ozon.ru/). You can manage
 your application with this library. It contains multiple
