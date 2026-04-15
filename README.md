@@ -1,7 +1,7 @@
 #  go-ozon
 ![Ozon API Library](.github/ozon-logo.png)
 
-**go-ozon** is a Rest API for [Ozon Seller.com](http://pipedrive.com). You can manage
+**go-ozon** is a Rest API for [Ozon Seller](https://seller.ozon.ru/). You can manage
 your application with this library. It contains multiple
 API requests Ozon Seller provides with support of CRUD operations.
 
