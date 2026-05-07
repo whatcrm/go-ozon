@@ -11,7 +11,7 @@ import (
 )
 
 func (c *Client) GetFbsPostingList(ctx context.Context, filter models.PaginatedGetPostingFBSListFilter) (*models.GetPostingFBSListResponseResultWrapper, error) {
-	requestURL := c.BaseURL + posting.PostingFbsListV3Endpoint
+	requestURL := c.BaseURL + posting.PostingFbsListV4Endpoint
 
 	jsonBody, err := json.Marshal(filter)
 	if err != nil {
@@ -116,7 +116,7 @@ func (c *Client) GetFbsPostingPackageLabel(ctx context.Context, data models.FBSP
 }
 
 func (c *Client) GetFboPostingList(ctx context.Context, filter models.PaginatedGetPostingFBOListFilter) (json.RawMessage, error) {
-	requestURL := c.BaseURL + posting.PostingFboListV2Endpoint
+	requestURL := c.BaseURL + posting.PostingFboListV3Endpoint
 
 	jsonBody, err := json.Marshal(filter)
 	if err != nil {
