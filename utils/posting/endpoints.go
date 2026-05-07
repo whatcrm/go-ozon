@@ -1,7 +1,7 @@
 package posting
 
 const (
-	PostingFbsListV3Endpoint               = "/v3/posting/fbs/list"
+	PostingFbsListV4Endpoint               = "/v4/posting/fbs/list"
 	PostingFbsGetV3Endpoint                = "/v3/posting/fbs/get"
 	PostingFbsShipV4Endpoint               = "/v4/posting/fbs/ship"
 	PostingFbsShipPackageV4Endpoint        = "/v4/posting/fbs/ship/package"
@@ -9,7 +9,7 @@ const (
 	PostingFbsProductCountrySetV2Endpoint  = "/v2/posting/fbs/product/country/set"
 	PostingFbsPackageLabelV2Endpoint       = "/v2/posting/fbs/package-label"
 
-	PostingFboListV2Endpoint = "/v2/posting/fbo/list"
+	PostingFboListV3Endpoint = "/v3/posting/fbo/list"
 
 	PostingFbsActCreateV2Endpoint      = "/v2/posting/fbs/act/create"
 	PostingFbsActGetPostingsV2Endpoint = "/v2/posting/fbs/act/get-postings"
