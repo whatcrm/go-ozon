@@ -34,7 +34,7 @@ go get github.com/whatcrm/go-ozon/models
 
 - *Lightweight and easy-to-use*
 - Simple and efficient net/http solution
-- Comprehensive **CRUD** for working with Pipedrive
+- Comprehensive **CRUD** for working with Ozon
 
 ## Ecosystem / Documentations
 
