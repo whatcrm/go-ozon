@@ -23,7 +23,7 @@ type SellerResponse struct {
 				Premium bool `json:"premium"`
 				Warning bool `json:"warning"`
 			} `json:"status"`
-			Value int `json:"value"`
+			Value float64 `json:"value"`
 		} `json:"current_value"`
 		Name      string `json:"name"`
 		PastValue struct {
@@ -35,7 +35,7 @@ type SellerResponse struct {
 				Premium bool `json:"premium"`
 				Warning bool `json:"warning"`
 			} `json:"status"`
-			Value int `json:"value"`
+			Value float64 `json:"value"`
 		} `json:"past_value"`
 		Rating    string `json:"rating"`
 		Status    string `json:"status"`
